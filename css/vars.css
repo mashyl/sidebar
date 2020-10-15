@@ -1,0 +1,8 @@
+:root {
+    --main-color: #222222;
+    --main-color-transp: #22222256;
+    --sec-color: #EF5F7E;
+    --highlighter: #75D1F6;
+    --quick-trans: 300ms;
+    --long-trans: 600ms
+}

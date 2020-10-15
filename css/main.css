@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1, p {
+    font-family: 'Asap', sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+    height: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--main-color-transp);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--sec-color);
+}
+
+main {
+    padding: 2rem;
+    margin-left: 5rem;
+}
+
+nav {
+    background-color: var(--main-color);
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    transition: width var(--quick-trans) ease;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#bottom {
+    margin-top: auto;
+}
+
+li {
+    width: 100%;
+}
+
+li:hover {
+    background-color: black;
+}
+
+li:hover svg {
+    fill: var(--highlighter);
+}
+
+li:hover span {
+    color: var(--highlighter);
+}
+
+a {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    text-decoration: none;
+    color: var(--sec-color);
+}
+
+a svg {
+    height: 4rem;
+    text-align: center;
+    fill: var(--sec-color);
+    margin-left: 0.5rem;
+    transition: fill var(--long-trans) ease;
+}
+
+a span {
+    display: none;
+    font-family: 'Asap', sans-serif;
+    margin-left: 2rem;
+    transition: color var(--long-trans) ease;
+}
+
+.logo span {
+    font-family: 'Asap', sans-serif;
+    letter-spacing: 0.15rem;
+    width: max-content;
+    text-align: center;
+}
+
+.logo svg {
+    width: 2rem;
+    height: 2rem;
+    margin: auto;
+    transform: rotate(0deg);
+    transition: transform var(--long-trans) ease-in-out;
+}
